@@ -1,7 +1,7 @@
 {-
 class Semigroup a => Monoid a where
   mappend :: a -> a -> a   -- ассоциативная бинарная операция на а. В Semigroup (классе, где нет нейтрального элемента) обозначается: <>
-  mempty :: a  -- нейтральный элемент: forAll x из а: х <> mempty == mempty <> х == mempty
+  mempty :: a  -- нейтральный элемент: forAll x из а: х <> mempty == mempty <> х == x
   mconcat :: [a] -> a  -- перемножение всех элементов списка (с помощью mappend)
 -}
 
